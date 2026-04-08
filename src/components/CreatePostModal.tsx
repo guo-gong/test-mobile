@@ -14,36 +14,36 @@ export default function CreatePostModal({ isOpen, onClose }: CreatePostModalProp
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
       <div className="w-full max-w-lg bg-white rounded-2xl overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-200">
         {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 border-b">
+        <div className="flex items-center justify-between px-6 py-4 border-b">
           <button 
             onClick={onClose}
-            className="text-gray-600 font-medium hover:text-gray-900 transition-colors"
+            className="text-gray-600 font-medium hover:text-gray-900 transition-colors text-lg"
           >
             取消
           </button>
-          <h2 className="text-lg font-bold text-gray-900">創建新貼文</h2>
-          <button className="bg-[#2d7d8e] text-white px-6 py-1.5 rounded-full font-medium hover:bg-[#246370] transition-colors">
+          <h2 className="text-xl font-bold text-gray-900">創建新貼文</h2>
+          <button className="bg-[#2d7d8e] text-white px-8 py-2 rounded-full font-medium hover:bg-[#246370] transition-colors text-lg">
             發布
           </button>
         </div>
 
         {/* User Info */}
-        <div className="flex items-center gap-3 px-4 py-4">
-          <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
+        <div className="flex items-center gap-4 px-6 py-5">
+          <div className="w-14 h-14 rounded-full overflow-hidden bg-gray-200">
             <img 
               src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop" 
               alt="User" 
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="font-bold text-gray-900">Your Name</span>
+          <span className="font-bold text-gray-900 text-lg">Your Name</span>
         </div>
 
         {/* Content Area */}
-        <div className="px-4 pb-4">
+        <div className="px-6 pb-6">
           <textarea 
             placeholder="今天想分享些什麼？" 
-            className="w-full h-32 text-lg text-gray-700 placeholder-gray-400 border-none focus:ring-0 resize-none p-0"
+            className="w-full h-40 text-xl text-gray-700 placeholder-gray-400 border-none focus:ring-0 resize-none p-0 leading-relaxed"
           />
           
           {/* Media Placeholder */}

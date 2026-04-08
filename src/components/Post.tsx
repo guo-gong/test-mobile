@@ -17,17 +17,17 @@ export default function Post({ name, avatar, time, content }: PostProps) {
           <img src={avatar} alt={name} className="w-full h-full object-cover" />
         </div>
         <div className="flex flex-col pt-2">
-          <span className="font-bold text-gray-900 text-xl leading-tight">{name}</span>
+          <span className="font-bold text-gray-900 text-xl leading-relaxed">{name}</span>
           <span className="text-base text-gray-400 mt-1">{time}</span>
         </div>
       </div>
       <div className="flex-1 flex flex-col pl-4">
         <div 
-          className="text-3xl font-medium text-gray-800 leading-tight h-full"
+          className="text-3xl font-medium text-gray-800 leading-relaxed h-full"
           style={{ 
             writingMode: 'vertical-lr', 
             textOrientation: 'upright',
-            letterSpacing: '0.25em'
+            letterSpacing: '0.4em'
           }}
         >
           {content}

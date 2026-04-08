@@ -31,20 +31,20 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f5f5] text-gray-900">
       {/* Header / Tabs */}
-      <header className="sticky top-0 z-40 bg-[#f5f5f5]/80 backdrop-blur-md px-6 pt-10 pb-2 border-b border-gray-100">
+      <header className="sticky top-0 z-40 bg-[#f5f5f5]/80 backdrop-blur-md px-8 pt-12 pb-4 border-b border-gray-100">
         <div className="max-w-screen-md mx-auto">
-          <nav className="flex gap-10">
+          <nav className="flex gap-12">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`relative pb-3 text-xl font-bold transition-all ${
+                className={`relative pb-4 text-2xl font-bold transition-all ${
                   activeTab === tab ? "text-[#2d7d8e]" : "text-gray-400 hover:text-gray-600"
                 }`}
               >
                 {tab}
                 {activeTab === tab && (
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#2d7d8e] rounded-full" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-[#2d7d8e] rounded-full" />
                 )}
               </button>
             ))}
@@ -53,8 +53,8 @@ export default function Home() {
       </header>
 
       {/* Feed Area */}
-      <div className="max-w-screen-md mx-auto p-6 flex flex-col items-start border-l border-gray-200 ml-4 md:ml-20 min-h-[calc(100vh-100px)]">
-        <div className="w-full flex gap-10 overflow-x-auto pb-10 scrollbar-hide">
+      <div className="max-w-screen-md mx-auto p-8 flex flex-col items-start border-l border-gray-200 ml-4 md:ml-24 min-h-[calc(100vh-100px)]">
+        <div className="w-full flex gap-12 overflow-x-auto pb-12 scrollbar-hide">
           {mockPosts.map((post) => (
             <div key={post.id} className="flex-shrink-0">
               <Post
