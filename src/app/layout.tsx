@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Social Plaza",
-  description: "A beautiful vertical social feed",
+  title: "资金调度指挥中心 | Capital Dispatch Command Center",
+  description: "High-fidelity financial dispatch command center dashboard",
 };
 
 export default function RootLayout({
